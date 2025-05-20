@@ -5,14 +5,14 @@ from parser import parser
 
 def load_tokens(path):
     with open(path, 'r') as f:
-        toks = f.read().split()
-    toks.append('$')
-    return toks
+        txts = f.read().split()
+    txts.append('$')
+    return txts
 
 # 정상 케이스
 @pytest.mark.parametrize("tokfile", [
-    "tests/valid1.tok",
-    # "tests/valid2.tok",
+    "tests/valid1.txt",
+    # "tests/valid2.txt",
 ])
 def test_valid(tokfile):
     tokens = load_tokens(tokfile)
@@ -22,8 +22,8 @@ def test_valid(tokfile):
 
 # 오류 케이스
 @pytest.mark.parametrize("tokfile", [
-    "tests/invalid1.tok",
-    # "tests/invalid2.tok",
+    "tests/invalid1.txt",
+    # "tests/invalid2.txt",
 ])
 def test_invalid(tokfile):
     tokens = load_tokens(tokfile)

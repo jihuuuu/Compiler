@@ -1,1 +1,5 @@
-id = num ; $
+type id ;
+type id = num ;
+type id = id + id ;
+type id = id * num ;
+type id = - id ;

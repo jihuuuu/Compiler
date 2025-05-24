@@ -5,3 +5,10 @@ type id ( type id , type id ) {
   }
   return id ;
 }
+type id = id + num * ( id - num ) ;
+type id ( type id , type id ) {
+  return id + num ;
+}
+if ( id == num ) id = id + num ;
+while ( id == num ) id = id * num ;
+for ( id = num ; id == num ; id = id + num ) id = id - num ;

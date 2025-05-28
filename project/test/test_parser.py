@@ -1,4 +1,4 @@
-import pytest
+import pytest # type: ignore
 import sys, os
 # project 폴더(=parser.py가 있는 곳)를 PYTHONPATH에 추가
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
